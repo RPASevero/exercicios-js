@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Curso Javascript</title>
+    <style>
+        body {
+            background-color: rgba(186, 218, 218, 0.808);
+            font: normal 12pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao Javascript</h1>
+    <p>A seguir vou executar alguns comandos em Javascript.</p>
+    <script>
+        /*var n1 = window.prompt("Digite um número")
+        var n2 = window.prompt("Digite outro número")
+        var s = n1 + n2
+        window.alert("A soma dos valores é " + s)*/
+        //(number + number) para adição
+        //(string + string) concatenação
+        // No exemplo acima ele está mostrando o número n1 seguido do n2 porque ele entende ser uma string, por isso o resultado é 12 ao invés de 3, para que ele entenda, eu vou fazer a conversão do dado, transformando o que ele entende como uma string, num  number, alteração logo abaixo:
+        /*var n1 = Number.parseFloat(window.prompt("Digite um número: "))
+        var n2 = Number.parseFloat(window.prompt("Digite outro número "))
+        var s = n1 + n2
+        window.alert(" A soma dos valores é " + s)*/
+        //parseInt é usado para números inteiros, enquanto parseFloat, números racionais e no exemplo, usei o Float para que se alguém digitar um número quebrado, ele some corretamente, mas atualmente, o ecmascript criou o "Number" que vai entender os dois casos, testarei abaixo:
+        var n1 = Number(window.prompt("Digite um número: "))
+        var n2 = Number(window.prompt("Digite outro número "))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>
